@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3F920381F18040200356938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F920371F18040200356938 /* AppDelegate.swift */; };
+		F3F9203A1F18040200356938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F920391F18040200356938 /* ViewController.swift */; };
+		F3F9203D1F18040200356938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F9203B1F18040200356938 /* Main.storyboard */; };
+		F3F920401F18040200356938 /* geoLocationProj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3F9203E1F18040200356938 /* geoLocationProj.xcdatamodeld */; };
+		F3F920421F18040300356938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F920411F18040300356938 /* Assets.xcassets */; };
+		F3F920451F18040300356938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F920431F18040300356938 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3F920341F18040200356938 /* geoLocationProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = geoLocationProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F920371F18040200356938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3F920391F18040200356938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3F9203C1F18040200356938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3F9203F1F18040200356938 /* geoLocationProj.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = geoLocationProj.xcdatamodel; sourceTree = "<group>"; };
+		F3F920411F18040300356938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3F920441F18040300356938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3F920461F18040300356938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3F920311F18040200356938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3F9202B1F18040200356938 = {
+			isa = PBXGroup;
+			children = (
+				F3F920361F18040200356938 /* geoLocationProj */,
+				F3F920351F18040200356938 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3F920351F18040200356938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3F920341F18040200356938 /* geoLocationProj.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3F920361F18040200356938 /* geoLocationProj */ = {
+			isa = PBXGroup;
+			children = (
+				F3F920371F18040200356938 /* AppDelegate.swift */,
+				F3F920391F18040200356938 /* ViewController.swift */,
+				F3F9203B1F18040200356938 /* Main.storyboard */,
+				F3F920411F18040300356938 /* Assets.xcassets */,
+				F3F920431F18040300356938 /* LaunchScreen.storyboard */,
+				F3F920461F18040300356938 /* Info.plist */,
+				F3F9203E1F18040200356938 /* geoLocationProj.xcdatamodeld */,
+			);
+			path = geoLocationProj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3F920331F18040200356938 /* geoLocationProj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F920491F18040300356938 /* Build configuration list for PBXNativeTarget "geoLocationProj" */;
+			buildPhases = (
+				F3F920301F18040200356938 /* Sources */,
+				F3F920311F18040200356938 /* Frameworks */,
+				F3F920321F18040200356938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = geoLocationProj;
+			productName = geoLocationProj;
+			productReference = F3F920341F18040200356938 /* geoLocationProj.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3F9202C1F18040200356938 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = GT;
+				TargetAttributes = {
+					F3F920331F18040200356938 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LNJ7E2FZMR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F3F9202F1F18040200356938 /* Build configuration list for PBXProject "geoLocationProj" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3F9202B1F18040200356938;
+			productRefGroup = F3F920351F18040200356938 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3F920331F18040200356938 /* geoLocationProj */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3F920321F18040200356938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F920451F18040300356938 /* LaunchScreen.storyboard in Resources */,
+				F3F920421F18040300356938 /* Assets.xcassets in Resources */,
+				F3F9203D1F18040200356938 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3F920301F18040200356938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F920401F18040200356938 /* geoLocationProj.xcdatamodeld in Sources */,
+				F3F9203A1F18040200356938 /* ViewController.swift in Sources */,
+				F3F920381F18040200356938 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3F9203B1F18040200356938 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F9203C1F18040200356938 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3F920431F18040300356938 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F920441F18040300356938 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3F920471F18040300356938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3F920481F18040300356938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3F9204A1F18040300356938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LNJ7E2FZMR;
+				INFOPLIST_FILE = geoLocationProj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GT.geoLocationProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F3F9204B1F18040300356938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LNJ7E2FZMR;
+				INFOPLIST_FILE = geoLocationProj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GT.geoLocationProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3F9202F1F18040200356938 /* Build configuration list for PBXProject "geoLocationProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F920471F18040300356938 /* Debug */,
+				F3F920481F18040300356938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F920491F18040300356938 /* Build configuration list for PBXNativeTarget "geoLocationProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F9204A1F18040300356938 /* Debug */,
+				F3F9204B1F18040300356938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3F9203E1F18040200356938 /* geoLocationProj.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3F9203F1F18040200356938 /* geoLocationProj.xcdatamodel */,
+			);
+			currentVersion = F3F9203F1F18040200356938 /* geoLocationProj.xcdatamodel */;
+			path = geoLocationProj.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3F9202C1F18040200356938 /* Project object */;
+}
