@@ -14,6 +14,10 @@
 		F3F920421F18040300356938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F920411F18040300356938 /* Assets.xcassets */; };
 		F3F920451F18040300356938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F920431F18040300356938 /* LaunchScreen.storyboard */; };
 		F3F9204D1F18800000356938 /* activeLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9204C1F18800000356938 /* activeLocations.swift */; };
+		F3F9204F1F188A5300356938 /* VCMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F9204E1F188A5300356938 /* VCMapViewDelegate.swift */; };
+		F3F920511F193C4700356938 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F920501F193C4700356938 /* TableViewController.swift */; };
+		F3F920531F193ED200356938 /* tableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F920521F193ED200356938 /* tableViewDelegate.swift */; };
+		F3F920551F194C8E00356938 /* DetailsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F920541F194C8E00356938 /* DetailsPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		F3F920441F18040300356938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3F920461F18040300356938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F9204C1F18800000356938 /* activeLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = activeLocations.swift; sourceTree = "<group>"; };
+		F3F9204E1F188A5300356938 /* VCMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapViewDelegate.swift; sourceTree = "<group>"; };
+		F3F920501F193C4700356938 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F3F920521F193ED200356938 /* tableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableViewDelegate.swift; sourceTree = "<group>"; };
+		F3F920541F194C8E00356938 /* DetailsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +68,12 @@
 			children = (
 				F3F920371F18040200356938 /* AppDelegate.swift */,
 				F3F920391F18040200356938 /* ViewController.swift */,
+				F3F9204E1F188A5300356938 /* VCMapViewDelegate.swift */,
 				F3F9204C1F18800000356938 /* activeLocations.swift */,
+				F3F920521F193ED200356938 /* tableViewDelegate.swift */,
 				F3F9203B1F18040200356938 /* Main.storyboard */,
+				F3F920541F194C8E00356938 /* DetailsPageViewController.swift */,
+				F3F920501F193C4700356938 /* TableViewController.swift */,
 				F3F920411F18040300356938 /* Assets.xcassets */,
 				F3F920431F18040300356938 /* LaunchScreen.storyboard */,
 				F3F920461F18040300356938 /* Info.plist */,
@@ -144,8 +156,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F9204D1F18800000356938 /* activeLocations.swift in Sources */,
+				F3F920511F193C4700356938 /* TableViewController.swift in Sources */,
 				F3F920401F18040200356938 /* geoLocationProj.xcdatamodeld in Sources */,
+				F3F920531F193ED200356938 /* tableViewDelegate.swift in Sources */,
+				F3F920551F194C8E00356938 /* DetailsPageViewController.swift in Sources */,
 				F3F9203A1F18040200356938 /* ViewController.swift in Sources */,
+				F3F9204F1F188A5300356938 /* VCMapViewDelegate.swift in Sources */,
 				F3F920381F18040200356938 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

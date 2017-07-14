@@ -10,20 +10,29 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate{
+class ViewController: UIViewController, CLLocationManagerDelegate, tableViewDelegate{
     
     @IBOutlet weak var mapView: MKMapView!
     var startingPoint: CLLocation?
 //    let annotation = MKPointAnnotation()
     let geocoder = CLGeocoder()
     var locations: [String] = ["711 Country Club Dr, Burbank, CA 91501-1123, United States", "Wildwood Canyon Park  1701 Wildwood Canyon, Burbank, CA. 91501"]
-    var pinPoints: [MKPointAnnotation] = []
+    var pinPoints: [EventLocation] = []
     
     
+    @IBAction func segueToListView(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "toListView", sender: sender)
+    }
     
-//    let geoCoder = CLGeocoder().geocodeAddressString(String, completionHandler: <#T##CLGeocodeCompletionHandler##CLGeocodeCompletionHandler##([CLPlacemark]?, Error?) -> Void#>)
-//    let currentLoxation =
+ 
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let navigationController = segue.destination as! UINavigationController
+        let tableViewController = navigationController.topViewController as! TableViewController
+        tableViewController.delegate = self
+        tableViewController.passedInLocations = pinPoints
+        
+    }
     
     let regionRadius: CLLocationDistance = 1000
     func centerMapOnLocation(location: CLLocation) {
@@ -48,7 +57,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     func retrieveThePoints() {
-        
+        var lati = 21.283921
+        var longi = -157.831661
+        for _ in 0...10 {
+            let mainEvent = EventLocation(title: "Farm", eventDescription: "Nothing but fun and games at the farm", coordinate: CLLocationCoordinate2D(latitude: lati, longitude: longi))
+            pinPoints.append(mainEvent)
+            lati += 5
+            longi += 5
+        }
     }
     
 //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -60,8 +76,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let mainEvent = EventLocation(locale: "Farm", eventDescription: "Nothing but fun and games at the farm", coordinate: CLLocationCoordinate2D(latitude: 21.283921, longitude: -157.831661))
-        mapView.addAnnotations(mainEvent)
+        mapView.delegate = self
+//        let mainEvent = EventLocation(title: "Farm", eventDescription: "Nothing but fun and games at the farm", coordinate: CLLocationCoordinate2D(latitude: 21.283921, longitude: -157.831661))
+//        print("this is the mainEvent ", mainEvent)
+        retrieveThePoints()
+        mapView.addAnnotations(pinPoints)
         
 //        for location in locations {
 //            var counter = ""
@@ -109,6 +128,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         super.viewDidAppear(animated)
         checkLocationAuthorizationStatus()
         centerMapOnLocation(location: startingPoint!)
@@ -116,9 +136,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         self.mapView.addAnnotations(pinPoints)
         
     }
-//
     
-    let address = "1 Infinite Loop, Cupertino, CA 95014"
+    func cancelbuttonPressed(by controller: TableViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
 }
 

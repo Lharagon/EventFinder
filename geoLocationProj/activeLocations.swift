@@ -11,16 +11,19 @@ import MapKit
 import UIKit
 
 class EventLocation: NSObject, MKAnnotation {
-    let locale: String
+    let title: String?
+    let subtitle: String?
     let eventDescription: String
     let coordinate: CLLocationCoordinate2D
     
-    init(locale: String, eventDescription: String, coordinate: CLLocationCoordinate2D) {
+    init(title: String, eventDescription: String, coordinate: CLLocationCoordinate2D) {
         
-        self.locale = locale
+        self.title = title
         self.eventDescription = eventDescription
         self.coordinate = coordinate
+        self.subtitle = eventDescription
         
         super.init()
+        
     }
 }
