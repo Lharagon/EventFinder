@@ -15,8 +15,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var mapView: MKMapView!
     var startingPoint: CLLocation?
     let annotation = MKPointAnnotation()
+    let geocoder = CLGeocoder()
+    var locations: [String] = ["711 Country Club Dr, Burbank, CA 91501-1123, United States", "Wildwood Canyon Park  1701 Wildwood Canyon, Burbank, CA. 91501"]
+    var pinPoints: [CLLocationCoordinate2D] = []
     
-//    let currentLoxation = 
+    
+    
+//    let geoCoder = CLGeocoder().geocodeAddressString(String, completionHandler: <#T##CLGeocodeCompletionHandler##CLGeocodeCompletionHandler##([CLPlacemark]?, Error?) -> Void#>)
+//    let currentLoxation =
     
     
     let regionRadius: CLLocationDistance = 1000
@@ -50,8 +56,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: 11.12, longitude: 12.11)
-        mapView.addAnnotation(annotation)
+        
+        for location in locations {
+            var counter = ""
+            print(location)
+        geocoder.geocodeAddressString(location) {
+            (placemarks, error) in
+            let placemark = placemarks?.first
+            let lat = placemark?.location?.coordinate.latitude
+            let lon = placemark?.location?.coordinate.longitude
+            print("Lat: \(String(describing: lat)), Lon: \(String(describing: lon))")
+            
+//            guard let lati = lat else { return }
+//            guard let long = lon else { return }
+////          
+//            if lati is CLLocation && long is Double {
+            self.annotation.coordinate = CLLocationCoordinate2D(latitude: lat!, longitude: lon!)
+            self.mapView.addAnnotation(self.annotation)
+            counter += "Second"
+            print(counter)
+            
+//                self.pinPoints.append(self.annotation.coordinate)
+////            }`
+//            self.annotation.coordinate = CLLocationCoordinate2D(latitude: lat!, longitude: lon!)
+//            self.pinPoints.append(self.annotation.coordinate)
+        }
+            counter += "First"
+        }
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -67,7 +98,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         centerMapOnLocation(location: startingPoint!)
         
     }
-
+//
+    
+    let address = "1 Infinite Loop, Cupertino, CA 95014"
 
 }
 

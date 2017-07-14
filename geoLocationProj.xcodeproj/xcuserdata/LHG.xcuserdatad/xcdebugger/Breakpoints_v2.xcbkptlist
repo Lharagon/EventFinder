@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "geoLocationProj/ViewController.swift"
-            timestampString = "521677358.226036"
+            timestampString = "521686236.70679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "checkLocationAuthorizationStatus()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,13 +26,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "geoLocationProj/ViewController.swift"
-            timestampString = "521677358.226036"
+            timestampString = "521686236.70679"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "geoLocationProj.ViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "geoLocationProj"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/LHG/Desktop/geoLocationProj/geoLocationProj/ViewController.swift"
+                  timestampString = "521682702.612905"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "408">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "geoLocationProj.ViewController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "geoLocationProj"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/LHG/Desktop/geoLocationProj/geoLocationProj/ViewController.swift"
+                  timestampString = "521682702.615473"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "geoLocationProj/ViewController.swift"
+            timestampString = "521686923.110939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
