@@ -14,10 +14,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     
     @IBOutlet weak var mapView: MKMapView!
     var startingPoint: CLLocation?
-    let annotation = MKPointAnnotation()
+//    let annotation = MKPointAnnotation()
     let geocoder = CLGeocoder()
     var locations: [String] = ["711 Country Club Dr, Burbank, CA 91501-1123, United States", "Wildwood Canyon Park  1701 Wildwood Canyon, Burbank, CA. 91501"]
-    var pinPoints: [CLLocationCoordinate2D] = []
+    var pinPoints: [MKPointAnnotation] = []
     
     
     
@@ -47,6 +47,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
+    func retrieveThePoints() {
+        
+    }
+    
 //    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
 //        let lastLocation = locations.last!
 //        print("This is the lat ", lastLocation.coordinate.latitude)
@@ -56,33 +60,45 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let mainEvent = EventLocation(locale: "Farm", eventDescription: "Nothing but fun and games at the farm", coordinate: CLLocationCoordinate2D(latitude: 21.283921, longitude: -157.831661))
+        mapView.addAnnotations(mainEvent)
         
-        for location in locations {
-            var counter = ""
-            print(location)
-        geocoder.geocodeAddressString(location) {
-            (placemarks, error) in
-            let placemark = placemarks?.first
-            let lat = placemark?.location?.coordinate.latitude
-            let lon = placemark?.location?.coordinate.longitude
-            print("Lat: \(String(describing: lat)), Lon: \(String(describing: lon))")
-            
-//            guard let lati = lat else { return }
-//            guard let long = lon else { return }
-////          
-//            if lati is CLLocation && long is Double {
-            self.annotation.coordinate = CLLocationCoordinate2D(latitude: lat!, longitude: lon!)
-            self.mapView.addAnnotation(self.annotation)
-            counter += "Second"
-            print(counter)
+//        for location in locations {
+//            var counter = ""
+//            print(location)
+//        geocoder.geocodeAddressString(location) {
+//            (placemarks, error) in
+//            let placemark = placemarks?.first
+//            let lat = placemark?.location?.coordinate.latitude
+//            let lon = placemark?.location?.coordinate.longitude
+//            print("Lat: \(String(describing: lat)), Lon: \(String(describing: lon))")
+//            
+////            guard let lati = lat else { return }
+////            guard let long = lon else { return }
+//////          
+////            if lati is CLLocation && long is Double {
+//            let annotation = MKPointAnnotation()
+//            annotation.coordinate = CLLocationCoordinate2D(latitude: lat!, longitude: lon!)
+//            self.pinPoints.append(annotation)
+        
+//            self.mapView.addAnnotation(annotation)
+//            counter += "Second"
+//            print(counter)
             
 //                self.pinPoints.append(self.annotation.coordinate)
 ////            }`
 //            self.annotation.coordinate = CLLocationCoordinate2D(latitude: lat!, longitude: lon!)
 //            self.pinPoints.append(self.annotation.coordinate)
-        }
-            counter += "First"
-        }
+//        }
+//            counter += "First"
+//        }
+//        print("This is pinPoints ", pinPoints)
+//        for thing in pinPoints {
+//            print("These are the things ", thing)
+//            self.mapView.addAnnotation(thing)
+//        }
+        
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -96,6 +112,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         super.viewDidAppear(animated)
         checkLocationAuthorizationStatus()
         centerMapOnLocation(location: startingPoint!)
+        print("This is pinPoints ", pinPoints)
+        self.mapView.addAnnotations(pinPoints)
         
     }
 //
