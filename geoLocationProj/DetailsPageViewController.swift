@@ -34,7 +34,7 @@ class DetailsPageViewController: UITableViewController {
         super.viewDidLoad()
         let initialLocation = CLLocation(latitude: (thisLocation?.coordinate.latitude)!, longitude: (thisLocation?.coordinate.longitude)!)
         centerMapOnLocation(location: initialLocation)
-        self.locationView.addAnnotation(thisLocation)
+        self.locationView.addAnnotation(thisLocation!)
         
         
     }
